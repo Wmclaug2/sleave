@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
 .page-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -48,7 +50,7 @@ header .socialbuttons {
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   header .socialbuttons {
     display: none;
   }
@@ -71,9 +73,11 @@ header .social-icon:hover {
   right: 0;
   border-radius: 10px 0 0 10px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   .nav {
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .nav ul {
@@ -106,24 +110,52 @@ header .social-icon:hover {
   text-align: center;
 }
 .content p {
-  position: absolute;
   margin: 20px;
   display: inline-block;
   float: right;
+  right: 10%;
   width: 50%;
   font-size: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: justify;
 }
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .content p {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    float: none;
+    width: 80%;
+    text-align: center;
+  }
+}
 .content aside {
   position: absolute;
+  font-family: 'Open Sans Condensed', sans-serif;
   display: inline-block;
   bottom: 10px;
   left: 30px;
 }
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .content aside {
+    display: block;
+    width: 60%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 .content img {
   width: 40%;
   margin: 10px auto 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .content img.sleave-pic {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 .content video {
   display: block;
@@ -135,6 +167,11 @@ header .social-icon:hover {
 }
 .content iframe {
   display: inline-block;
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .content iframe {
+    display: block;
+  }
 }
 .content .posters {
   margin: 20px 10px 20px 10px;

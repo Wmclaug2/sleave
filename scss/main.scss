@@ -1,5 +1,7 @@
 @import "compass/css3",
-"mixins";
+"mixins",
+'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
+'https://fonts.googleapis.com/css?family=Montserrat';
 
 .page-wrapper{
 	width: 100%;
@@ -87,6 +89,8 @@ header{
 	 
 	 @include mobile{
 	 	width:100%;
+	 	margin: 0 auto;
+	 	text-align:center;
 	 }
 
 	 ul{
@@ -123,28 +127,54 @@ header{
 	}
 
 	 p{
-		position: absolute;
 		margin:20px;
 		display: inline-block;
 		float:right;
+		right:10%;
 		width:50%;
 		font-size: 25px; 
 		font-family:'Open Sans Condensed', sans-serif;;
 		text-align: justify;
+		@include mobile{
+			margin-bottom:20px;
+			padding-left:30px;
+			display:block;
+			float:none;
+			width:80%;
+			text-align:center;
+		}
 	}
 	/*	make this stick to the bottom of the picture*/
+	 
 	 aside{
 		position: absolute;
-		display: inline-block;
-		bottom: 10px;
-		left:30px;
-		
+		font-family:'Open Sans Condensed', sans-serif;
+		 display: inline-block;
+		 bottom: 10px;
+		 left:30px;
+		 @include mobile{
+		 	display:block;
+		 	width:60%;
+		 	position:relative;
+		 	bottom:0;
+		 	left:0;
+		 	margin:0 auto;
+		}
 	}
 
 	 img{
 		width: 40%;
 		margin: 10px auto 0 auto;
+		&.sleave-pic{
+			@include mobile{
+				display:block;
+				width:80%;
+				margin:10px auto;
+			}
+		}
 	}
+
+
 
 	 video{   
 		display: block;
@@ -154,8 +184,12 @@ header{
 		width:80%; 
 		border: 2px solid black;
 	}
+
 	 iframe{
 		display: inline-block;
+		@include mobile{
+			display:block;
+		}
 	}
 
 
