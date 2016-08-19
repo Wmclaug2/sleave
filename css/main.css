@@ -1,193 +1,71 @@
-.page-wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.page-wrapper, body {
-  background-color: #000;
-}
-
-header {
-  background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-  position: relative;
-}
-header .logo {
-  position: absolute;
-  transition: all 2s;
-}
-header .logo.loaded {
-  left: 0;
-}
-header .logo.init {
-  left: -500px;
-}
-header h1 {
-  font-size: 90px;
-  margin: 0 auto 0 70px;
-}
-header h2, header .socialbuttons {
-  padding: 10px;
-}
-header h2 {
-  font-size: 25px;
-}
-header h1, header h2, header .socialbuttons {
-  position: relative;
-  float: left;
-}
-header h1, header h2 {
-  font-family: 'Amatic SC', cursive;
-  color: white;
-}
-header .socialbuttons {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  header .socialbuttons {
-    display: none;
-  }
-}
-header .social-icon {
-  display: inline-block;
-  margin: 15px 10px 0px auto;
-}
-header .social-icon:hover {
-  transform: translateY(3px);
-}
-
-.nav {
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  -moz-opacity: 0.6;
-  -khtml-opacity: 0.6;
-  opacity: 0.6;
-  right: 0;
-  border-radius: 10px 0 0 10px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .nav {
-    width: 100%;
-  }
-}
-.nav ul {
-  background-color: #111111;
-  padding: 20px;
-}
-.nav .btn-primary, .nav li {
-  display: inline;
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-  font-family: 'Architects Daughter', cursive;
-  background: "light gray";
-}
-.nav li:hover, .nav .foot-nav li:hover {
-  background-color: dimgray;
-}
-
-.content {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  margin: 30px auto;
-  background-color: white;
-  padding: 30px;
-  /*	make this stick to the bottom of the picture*/
-}
-.content h3 {
-  font: bold 50px "Amatic SC";
-  text-align: center;
-}
-.content p {
-  position: absolute;
-  margin: 20px;
-  display: inline-block;
-  float: right;
-  width: 50%;
-  font-size: 25px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-align: justify;
-}
-.content aside {
-  position: absolute;
-  display: inline-block;
-  bottom: 10px;
-  left: 30px;
-}
-.content img {
-  width: 40%;
-  margin: 10px auto 0 auto;
-}
-.content video {
-  display: block;
-  position: relative;
-  margin: 40px auto;
-  bottom: 0;
-  width: 80%;
-  border: 2px solid black;
-}
-.content iframe {
-  display: inline-block;
-}
-.content .posters {
-  margin: 20px 10px 20px 10px;
-  text-align: center;
-}
-
-.foot-nav {
-  margin: 10px auto 0 auto;
-  bottom: 0;
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
-  text-align: center;
-  position: relative;
-}
-.foot-nav ul {
-  background-color: #777;
-  padding: 20px;
-}
-.foot-nav .btn-primary1, .foot-nav li {
-  display: inline;
-  text-decoration: none;
-  padding: 10px;
-  color: white;
-  font-family: 'Architects Daughter', cursive;
-  background: "light gray";
-}
-
 /*
-@font-face {
-    font-family: 'architects_daughterregular';
-    src: url('architectsdaughter-webfont.woff2') format('woff2'),
-         url('architectsdaughter-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+Error: File to import not found or unreadable: mixins.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/WSM/Desktop/Web Dev/Sleave/scss
+         /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets
+        on line 6 of /Users/WSM/Desktop/Web Dev/Sleave/scss/main.scss
 
-}
+1: // *********************
+2: // IMPORTS
+3: // *********************
+4: 
+5: @import "compass/css3",
+6: "mixins";
+7: 
+8: // *********************
+9: // Wrapper and body
+10: // *********************
+11: 
 
-@font-face {
-    font-family: 'amatic_scbold';
-    src: url('amaticsc-bold-webfont.woff2') format('woff2'),
-         url('amaticsc-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'amatic_scregular';
-    src: url('amaticsc-regular-webfont.woff2') format('woff2'),
-         url('amaticsc-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
+Backtrace:
+/Users/WSM/Desktop/Web Dev/Sleave/scss/main.scss:6
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: mixins.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/WSM/Desktop/Web Dev/Sleave/scss\A          /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets\A         on line 6 of /Users/WSM/Desktop/Web Dev/Sleave/scss/main.scss\A \A 1: // *********************\A 2: // IMPORTS\A 3: // *********************\A 4: \A 5: @import \"compass/css3\",\A 6: \"mixins\";\A 7: \A 8: // *********************\A 9: // Wrapper and body\A 10: // *********************\A 11: "; }
