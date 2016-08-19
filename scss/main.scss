@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // *********************
 // IMPORTS
 // *********************
@@ -9,6 +10,11 @@
 // Wrapper and body
 // *********************
 
+=======
+@import "compass/css3",
+"mixins";
+
+>>>>>>> master
 .page-wrapper{
 	width: 100%;
 	margin: 0 auto;
@@ -18,10 +24,13 @@
 	background-color: #000;
 }
 
+<<<<<<< HEAD
 // *********************
 // Header
 // *********************
 
+=======
+>>>>>>> master
 header{
 	background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
 	background-size: cover;
@@ -30,9 +39,15 @@ header{
 	margin:0 auto;
 	position: relative;
 
+<<<<<<< HEAD
 	@include mobile{
 		width:100%;
 	}
+=======
+	// @include mobile{
+	// 	width:50%;
+	// }
+>>>>>>> master
 
 	.logo{
 		position:absolute;
@@ -68,9 +83,13 @@ header{
 		font-family: 'Amatic SC', cursive;
 		color: white;
 	}
+<<<<<<< HEAD
 // *********************
 // Social buttons
 // *********************
+=======
+
+>>>>>>> master
 	.socialbuttons{
 		position: absolute;
 		bottom: 0;
@@ -89,11 +108,14 @@ header{
 		transform:translateY(3px);
 	}
 }
+<<<<<<< HEAD
 
 // *********************
 // Top Nav
 // *********************
 
+=======
+>>>>>>> master
 .nav{
 		position: absolute;
 		display: inline-block;
@@ -127,11 +149,14 @@ header{
 		background-color:dimgray;
 	}
 }
+<<<<<<< HEAD
 
 // *********************
 // Main Content
 // *********************
 
+=======
+>>>>>>> master
 .content {
 	position: relative;
 	width:80%;
@@ -164,9 +189,13 @@ header{
 		left:30px;
 		
 	}
+<<<<<<< HEAD
 // *********************
 // Main Image and Video
 // *********************
+=======
+
+>>>>>>> master
 	 img{
 		width: 40%;
 		margin: 10px auto 0 auto;
@@ -190,9 +219,12 @@ header{
 		text-align: center;
 	}
 }
+<<<<<<< HEAD
 // *********************
 // Footer
 // *********************
+=======
+>>>>>>> master
 
 .foot-nav{
 	margin: 10px auto 0 auto;
@@ -216,3 +248,36 @@ header{
 		background: "light gray";
 	}
 }
+<<<<<<< HEAD
+=======
+
+
+/*
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('architectsdaughter-webfont.woff2') format('woff2'),
+         url('architectsdaughter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic_scbold';
+    src: url('amaticsc-bold-webfont.woff2') format('woff2'),
+         url('amaticsc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('amaticsc-regular-webfont.woff2') format('woff2'),
+         url('amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+>>>>>>> master
