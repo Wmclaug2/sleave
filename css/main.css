@@ -1,0 +1,193 @@
+.page-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrapper, body {
+  background-color: #000;
+}
+
+header {
+  background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  transition: all 2s;
+}
+header .logo.loaded {
+  left: 0;
+}
+header .logo.init {
+  left: -500px;
+}
+header h1 {
+  font-size: 90px;
+  margin: 0 auto 0 70px;
+}
+header h2, header .socialbuttons {
+  padding: 10px;
+}
+header h2 {
+  font-size: 25px;
+}
+header h1, header h2, header .socialbuttons {
+  position: relative;
+  float: left;
+}
+header h1, header h2 {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+}
+header .socialbuttons {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .socialbuttons {
+    display: none;
+  }
+}
+header .social-icon {
+  display: inline-block;
+  margin: 15px 10px 0px auto;
+}
+header .social-icon:hover {
+  transform: translateY(3px);
+}
+
+.nav {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .nav {
+    width: 100%;
+  }
+}
+.nav ul {
+  background-color: #111111;
+  padding: 20px;
+}
+.nav .btn-primary, .nav li {
+  display: inline;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  background: "light gray";
+}
+.nav li:hover, .nav .foot-nav li:hover {
+  background-color: dimgray;
+}
+
+.content {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  /*	make this stick to the bottom of the picture*/
+}
+.content h3 {
+  font: bold 50px "Amatic SC";
+  text-align: center;
+}
+.content p {
+  position: absolute;
+  margin: 20px;
+  display: inline-block;
+  float: right;
+  width: 50%;
+  font-size: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: justify;
+}
+.content aside {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 30px;
+}
+.content img {
+  width: 40%;
+  margin: 10px auto 0 auto;
+}
+.content video {
+  display: block;
+  position: relative;
+  margin: 40px auto;
+  bottom: 0;
+  width: 80%;
+  border: 2px solid black;
+}
+.content iframe {
+  display: inline-block;
+}
+.content .posters {
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+}
+
+.foot-nav {
+  margin: 10px auto 0 auto;
+  bottom: 0;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  text-align: center;
+  position: relative;
+}
+.foot-nav ul {
+  background-color: #777;
+  padding: 20px;
+}
+.foot-nav .btn-primary1, .foot-nav li {
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  background: "light gray";
+}
+
+/*
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('architectsdaughter-webfont.woff2') format('woff2'),
+         url('architectsdaughter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic_scbold';
+    src: url('amaticsc-bold-webfont.woff2') format('woff2'),
+         url('amaticsc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('amaticsc-regular-webfont.woff2') format('woff2'),
+         url('amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
