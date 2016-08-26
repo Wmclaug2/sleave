@@ -5,6 +5,7 @@
 
 .page-wrapper{
 	width: 100%;
+	height:100%;
 	margin: 0 auto;
 }
 
@@ -59,7 +60,7 @@ header{
 		color: white;
 	}
 
-	.socialbuttons{
+	.social-buttons{
 		position: absolute;
 		bottom: 0;
 		background: rgba(0,0,0,.3);
@@ -70,12 +71,13 @@ header{
 
 	.social-icon {
 		display: inline-block;
-		margin:15px 10px 0px auto;
 	}
+	
 
 	.social-icon:hover{
 		transform:translateY(3px);
 	}
+	
 }
 .nav{
 		position: absolute;
@@ -196,8 +198,18 @@ header{
 	.posters{
 		margin:20px 10px 20px 10px;
 		text-align: center;
+		& img
+			{
+				margin: 10px auto;
+				padding:20px;
+				@include mobile{
+					width:80%;
+					display:block;
+					margin-bottom:30px;
+				}
+			}
+		}
 	}
-}
 
 .foot-nav{
 	margin: 10px auto 0 auto;
