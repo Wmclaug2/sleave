@@ -1,9 +1,21 @@
+// ****************************
+
+// * Imports
+
+// ****************************
+
 @import "compass/css3",
 "mixins",
 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
 'https://fonts.googleapis.com/css?family=Montserrat';
 
-.page-wrapper{
+// ****************************
+
+// * Wrappers and Base
+
+// ****************************
+
+.page-wrapper, html, body{
 	width: 100%;
 	height:100%;
 	margin: 0 auto;
@@ -13,52 +25,44 @@
 	background-color: #000;
 }
 
+// ****************************
+
+// * Header
+
+// ****************************
+
 header{
 	background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
 	background-size: cover;
 	width:100%;
-	height: 500px;
-	margin:0 auto;
-	position: relative;
-
-	// @include mobile{
-	// 	width:50%;
-	// }
-
-	.logo{
-		position:absolute;
-		transition: all 2s;
-		&.loaded{
-			left:0;
-		}
-		&.init {
-			left:-500px;
-		}
+	height: 60%;
+	position: relative;	
+	@include mobile{
+		height:40%;
 	}
-	
 
-	h1{
+	h1{	
+		color:white;
+		font-family: 'Amatic SC', cursive;
+		float:left;
 		font-size: 90px;
 		margin: 0 auto 0 70px;
 	}
 
-	h2, .socialbuttons{
-		padding:10px;
-	}
-
 	h2{
+		color:white;
+		font-family: 'Amatic SC', cursive;
+		padding:10px;
+		position: relative;
+		float:left;
 		font-size: 25px;
 	}
 
-	h1, h2, .socialbuttons{
-		position: relative;
-		float:left;
-	}
+	// ****************************
 
-	h1, h2{
-		font-family: 'Amatic SC', cursive;
-		color: white;
-	}
+	// * Social Icons
+
+	// ****************************
 
 	.social-buttons{
 		position: absolute;
@@ -67,33 +71,34 @@ header{
 		@include mobile{
 			display:none;
 		}
+		.social-icon {
+			display: inline-block;
+			&:hover{
+				transform:translateY(3px);
+			}
+		}
 	}
 
-	.social-icon {
-		display: inline-block;
-	}
-	
+	// ****************************
 
-	.social-icon:hover{
-		transform:translateY(3px);
-	}
-	
-}
-.nav{
-		position: absolute;
-		display: inline-block;
-		bottom: 0;
-		-moz-opacity: 0.6;
-	    -khtml-opacity: 0.6;
-	    opacity: 0.6;  
-	  	right:0;
-	    border-radius: 10px 0 0 10px;
-	 
-	 @include mobile{
-	 	width:100%;
-	 	margin: 0 auto;
-	 	text-align:center;
-	 }
+	// * Nav
+
+	// ****************************
+
+	.nav{
+			position: absolute;
+			display: inline-block;
+			bottom: 0;
+			-moz-opacity: 0.6;
+		    -khtml-opacity: 0.6;
+		    opacity: 0.6;  
+		  	right:0;
+		    border-radius: 10px 0 0 10px;
+			 @include mobile{
+			 	width:100%;
+			 	margin: 0 auto;
+			 	text-align:center;
+			 }
 
 	 ul{
 		background-color:#111111 ;
@@ -107,23 +112,51 @@ header{
 		color:white;
 		font-family: 'Architects Daughter', cursive;
 		background: "light gray";
+		@include mobile{
+			padding:10px;
+		}
 
 	}
 
-	 li:hover, .foot-nav li:hover{
-		background-color:dimgray;
+	 	li:hover, .foot-nav li:hover{
+			background-color:dimgray;
+		}
 	}
 }
+
+// ****************************
+
+// * Main page content
+
+// ****************************
+
 .content {
+	display:block;
 	position: relative;
 	width:80%;
-	height: 100%;
+	height: auto;
 	margin: 30px auto;
 	background-color: white;
 	padding: 30px;
+	
+	.posters{
+		margin:20px 10px 20px 10px;
+		text-align: center;
+		& img
+			{
+				width:80%;
+				margin: 10px auto;
+				padding:10px;
+			}
+		}
 
+	// ****************************
 
-	 h3{
+	// * About page content
+
+	// ****************************
+
+	h3{
 		font: bold 50px "Amatic SC";
 		text-align: center;
 	}
@@ -146,8 +179,6 @@ header{
 			text-align:center;
 		}
 	}
-	/*	make this stick to the bottom of the picture*/
-	 
 	 aside{
 		position: absolute;
 		font-family:'Open Sans Condensed', sans-serif;
@@ -164,10 +195,10 @@ header{
 		}
 	}
 
-	 img{
-		width: 40%;
-		margin: 10px auto 0 auto;
+	img{
 		&.sleave-pic{
+			width: 40%;
+			margin: 10px auto 0 auto;
 			@include mobile{
 				display:block;
 				width:80%;
@@ -175,8 +206,6 @@ header{
 			}
 		}
 	}
-
-
 
 	 video{   
 		display: block;
@@ -193,25 +222,16 @@ header{
 			display:block;
 		}
 	}
+}
 
+// ****************************
 
-	.posters{
-		margin:20px 10px 20px 10px;
-		text-align: center;
-		& img
-			{
-				margin: 10px auto;
-				padding:20px;
-				@include mobile{
-					width:80%;
-					display:block;
-					margin-bottom:30px;
-				}
-			}
-		}
-	}
+// * Foot Nav
+
+// ****************************
 
 .foot-nav{
+	@extend %clearfix;
 	margin: 10px auto 0 auto;
 	bottom:0;  
     -moz-opacity: 0.8;
@@ -233,33 +253,3 @@ header{
 		background: "light gray";
 	}
 }
-
-
-/*
-@font-face {
-    font-family: 'architects_daughterregular';
-    src: url('architectsdaughter-webfont.woff2') format('woff2'),
-         url('architectsdaughter-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'amatic_scbold';
-    src: url('amaticsc-bold-webfont.woff2') format('woff2'),
-         url('amaticsc-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'amatic_scregular';
-    src: url('amaticsc-regular-webfont.woff2') format('woff2'),
-         url('amaticsc-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
