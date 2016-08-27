@@ -32,11 +32,12 @@
 // ****************************
 
 header{
-	background-size: cover;
 	background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
-	height: 60%;
+	background-size: cover;
+	height: 70%;
 	position: relative;	
 	width:100%;
+	margin: 0 auto;
 	@include mobile{
 		height:40%;
 	}
