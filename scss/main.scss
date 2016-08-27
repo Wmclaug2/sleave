@@ -16,9 +16,9 @@
 // ****************************
 
 .page-wrapper, html, body{
-	width: 100%;
 	height:100%;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .page-wrapper, body{
@@ -32,11 +32,11 @@
 // ****************************
 
 header{
-	background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
 	background-size: cover;
-	width:100%;
+	background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
 	height: 60%;
 	position: relative;	
+	width:100%;
 	@include mobile{
 		height:40%;
 	}
@@ -49,8 +49,8 @@ header{
 	}
 	h1{	
 		color:white;
-		font-family: 'Amatic SC', cursive;
 		float:left;
+		font-family: 'Amatic SC', cursive;
 		font-size: 90px;
 		margin: 0 auto 0 70px;
 		@include mobile{
@@ -62,16 +62,16 @@ header{
 
 	h2{
 		color:white;
+		float:left;
 		font-family: 'Amatic SC', cursive;
+		font-size: 25px;
 		padding:10px;
 		position: relative;
-		float:left;
-		font-size: 25px;
 		@include mobile{
-			padding:0;
-			float:none;
 			display:block;
+			float:none;
 			margin:0 auto;
+			padding:0;
 		}
 	}
 
@@ -82,10 +82,10 @@ header{
 	// ****************************
 
 	.social-buttons{
-		width:40%;
+		display:inline-block;
 		height:40%;
 		list-style:none;
-		display:inline-block;
+		width:40%;
 		& img.social-icon {
 			position:absolute;
 			width:30%;
@@ -98,18 +98,16 @@ header{
 	// ****************************
 
 	.nav{
-			position: absolute;
-			display: inline-block;
 			bottom: 0;
-			-moz-opacity: 0.6;
-		    -khtml-opacity: 0.6;
-		    opacity: 0.6;  
+			display: inline-block;
+			position: absolute;
 		  	right:0;
 		    border-radius: 10px 0 0 10px;
+		    opacity: 0.6;  
 			 @include mobile{
-			 	width:100%;
 			 	margin: 0 auto;
 			 	text-align:center;
+			 	width:100%;
 			 }
 
 	 ul{
@@ -118,12 +116,12 @@ header{
 	}
 
 	.btn-primary, li{
-		display:inline;
-		text-decoration:none;
-		padding:20px;
-		color:white;
-		font-family: 'Architects Daughter', cursive;
 		background: "light gray";
+		color:white;
+		display:inline;
+		font-family: 'Architects Daughter', cursive;
+		padding:20px;
+		text-decoration:none;
 		@include mobile{
 			padding:10px;
 		}
@@ -143,22 +141,21 @@ header{
 // ****************************
 
 .content {
+	background-color: white;
 	display:block;
-	position: relative;
-	width:80%;
 	height: auto;
 	margin: 30px auto;
-	background-color: white;
 	padding: 30px;
-	
+	position: relative;
+	width:80%;
 	.posters{
 		margin:20px 10px 20px 10px;
 		text-align: center;
 		& img
 			{
-				width:80%;
 				margin: 10px auto;
 				padding:10px;
+				width:80%;
 			}
 		}
 
@@ -174,63 +171,63 @@ header{
 	}
 
 	 p{
-		margin:20px;
 		display: inline-block;
 		float:right;
-		width:50%;
-		font-size: 25px; 
 		font-family:'Open Sans Condensed', sans-serif;;
+		font-size: 25px; 
+		margin:20px;
 		text-align: justify;
+		width:50%;
 		@include mobile{
-			margin:10px auto;
 			display:block;
 			float:none;
-			width:80%;
+			margin:10px auto;
 			text-align:center;
+			width:80%;
 		}
 	}
 	 aside{
-		position: absolute;
+		bottom: 10px;
+		display: inline-block;
+		left:30px;
 		font-family:'Open Sans Condensed', sans-serif;
-		 display: inline-block;
-		 bottom: 10px;
-		 left:30px;
-		 @include mobile{
-		 	display:block;
-		 	width:60%;
-		 	position:relative;
+		position: absolute;
+		@include mobile{
 		 	bottom:0;
+		 	display:block;
 		 	left:0;
 		 	margin:0 auto;
+		 	position:relative;
+		 	width:60%;
 		}
 	}
 
 	img{
 		&.sleave-pic{
-			width: 40%;
 			margin: 10px auto 0 auto;
+			width: 40%;
 			@include mobile{
 				display:block;
-				width:80%;
 				margin:10px auto;
+				width:80%;
 			}
 		}
 	}
 
 	 video{   
-		display: block;
-		position: relative;
-		margin: 40px auto;
-		bottom:0;
-		width:90%; 
 		border: 2px solid black;
+		bottom:0;
+		display: block;
+		margin: 40px auto;
+		position: relative;
+		width:90%; 
 	}
 
 	 iframe{
 		display: inline-block;
 		@include mobile{
-			margin:0 auto;
 			display:block;
+			margin:0 auto;
 		}
 	}
 }
@@ -242,13 +239,10 @@ header{
 // ****************************
 
 .foot-nav{
-	@extend %clearfix;
-	margin: 10px auto 0 auto;
 	bottom:0;  
-    -moz-opacity: 0.8;
-    -khtml-opacity: 0.8;
-    opacity: 0.8;  
+	margin: 10px auto 0 auto;
 	text-align: center;
+    opacity: 0.8;  
     position: relative;
 
 	ul{
@@ -256,12 +250,12 @@ header{
 		padding: 20px;
 	}
 	.btn-primary1, li{
-		display:inline;
-		text-decoration:none;
-		padding:10px;
-		color:white;
-		font-family: 'Architects Daughter', cursive;
 		background: "light gray";
+		color:white;
+		display:inline;
+		font-family: 'Architects Daughter', cursive;
+		padding:10px;
+		text-decoration:none;
 		@include mobile{
 			padding:5px;
 		}

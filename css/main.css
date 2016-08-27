@@ -1,20 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
-.foot-nav {
-  *zoom: 1;
-}
-.foot-nav:before, .foot-nav:after {
-  content: " ";
-  display: table;
-}
-.foot-nav:after {
-  clear: both;
-}
-
 .page-wrapper, html, body {
-  width: 100%;
   height: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .page-wrapper, body {
@@ -22,18 +11,18 @@
 }
 
 header {
-  background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
   background-size: cover;
-  width: 100%;
+  background: #111111 url(../images/sleave-blur.jpg) top center no-repeat;
   height: 60%;
   position: relative;
+  width: 100%;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header {
     height: 40%;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header .logo {
     display: block;
     text-align: center;
@@ -41,12 +30,12 @@ header {
 }
 header h1 {
   color: white;
-  font-family: 'Amatic SC', cursive;
   float: left;
+  font-family: 'Amatic SC', cursive;
   font-size: 90px;
   margin: 0 auto 0 70px;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header h1 {
     display: block;
     float: none;
@@ -55,45 +44,43 @@ header h1 {
 }
 header h2 {
   color: white;
+  float: left;
   font-family: 'Amatic SC', cursive;
+  font-size: 25px;
   padding: 10px;
   position: relative;
-  float: left;
-  font-size: 25px;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header h2 {
-    padding: 0;
-    float: none;
     display: block;
+    float: none;
     margin: 0 auto;
+    padding: 0;
   }
 }
 header .social-buttons {
-  width: 40%;
+  display: inline-block;
   height: 40%;
   list-style: none;
-  display: inline-block;
+  width: 40%;
 }
 header .social-buttons img.social-icon {
   position: absolute;
   width: 30%;
 }
 header .nav {
-  position: absolute;
-  display: inline-block;
   bottom: 0;
-  -moz-opacity: 0.6;
-  -khtml-opacity: 0.6;
-  opacity: 0.6;
+  display: inline-block;
+  position: absolute;
   right: 0;
   border-radius: 10px 0 0 10px;
+  opacity: 0.6;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header .nav {
-    width: 100%;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
   }
 }
 header .nav ul {
@@ -101,14 +88,14 @@ header .nav ul {
   padding: 20px;
 }
 header .nav .btn-primary, header .nav li {
-  display: inline;
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-  font-family: 'Architects Daughter', cursive;
   background: "light gray";
+  color: white;
+  display: inline;
+  font-family: 'Architects Daughter', cursive;
+  padding: 20px;
+  text-decoration: none;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   header .nav .btn-primary, header .nav li {
     padding: 10px;
   }
@@ -118,98 +105,96 @@ header .nav li:hover, header .nav .foot-nav li:hover {
 }
 
 .content {
+  background-color: white;
   display: block;
-  position: relative;
-  width: 80%;
   height: auto;
   margin: 30px auto;
-  background-color: white;
   padding: 30px;
+  position: relative;
+  width: 80%;
 }
 .content .posters {
   margin: 20px 10px 20px 10px;
   text-align: center;
 }
 .content .posters img {
-  width: 80%;
   margin: 10px auto;
   padding: 10px;
+  width: 80%;
 }
 .content h3 {
   font: bold 50px "Amatic SC";
   text-align: center;
 }
 .content p {
-  margin: 20px;
   display: inline-block;
   float: right;
-  width: 50%;
-  font-size: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  margin: 20px;
   text-align: justify;
+  width: 50%;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   .content p {
-    margin: 10px auto;
     display: block;
     float: none;
-    width: 80%;
+    margin: 10px auto;
     text-align: center;
+    width: 80%;
   }
 }
 .content aside {
-  position: absolute;
-  font-family: 'Open Sans Condensed', sans-serif;
-  display: inline-block;
   bottom: 10px;
+  display: inline-block;
   left: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: absolute;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   .content aside {
-    display: block;
-    width: 60%;
-    position: relative;
     bottom: 0;
+    display: block;
     left: 0;
     margin: 0 auto;
+    position: relative;
+    width: 60%;
   }
 }
 .content img.sleave-pic {
-  width: 40%;
   margin: 10px auto 0 auto;
+  width: 40%;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   .content img.sleave-pic {
     display: block;
-    width: 80%;
     margin: 10px auto;
+    width: 80%;
   }
 }
 .content video {
-  display: block;
-  position: relative;
-  margin: 40px auto;
-  bottom: 0;
-  width: 90%;
   border: 2px solid black;
+  bottom: 0;
+  display: block;
+  margin: 40px auto;
+  position: relative;
+  width: 90%;
 }
 .content iframe {
   display: inline-block;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   .content iframe {
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
   }
 }
 
 .foot-nav {
-  margin: 10px auto 0 auto;
   bottom: 0;
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  margin: 10px auto 0 auto;
   text-align: center;
+  opacity: 0.8;
   position: relative;
 }
 .foot-nav ul {
@@ -217,14 +202,14 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   padding: 20px;
 }
 .foot-nav .btn-primary1, .foot-nav li {
-  display: inline;
-  text-decoration: none;
-  padding: 10px;
-  color: white;
-  font-family: 'Architects Daughter', cursive;
   background: "light gray";
+  color: white;
+  display: inline;
+  font-family: 'Architects Daughter', cursive;
+  padding: 10px;
+  text-decoration: none;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media handheld, screen and (max-width: 995px) {
   .foot-nav .btn-primary1, .foot-nav li {
     padding: 5px;
   }
