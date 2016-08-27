@@ -28,9 +28,9 @@ header {
   height: 60%;
   position: relative;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   header {
-    height: 40%;
+    height: 30%;
   }
 }
 header h1 {
@@ -53,7 +53,7 @@ header .social-buttons {
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   header .social-buttons {
     display: none;
   }
@@ -74,7 +74,7 @@ header .nav {
   right: 0;
   border-radius: 10px 0 0 10px;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   header .nav {
     width: 100%;
     margin: 0 auto;
@@ -93,7 +93,7 @@ header .nav .btn-primary, header .nav li {
   font-family: 'Architects Daughter', cursive;
   background: "light gray";
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   header .nav .btn-primary, header .nav li {
     padding: 10px;
   }
@@ -134,7 +134,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: justify;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   .content p {
     margin-bottom: 20px;
     padding-left: 30px;
@@ -151,7 +151,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   bottom: 10px;
   left: 30px;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   .content aside {
     display: block;
     width: 60%;
@@ -165,7 +165,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   width: 40%;
   margin: 10px auto 0 auto;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   .content img.sleave-pic {
     display: block;
     width: 80%;
@@ -183,7 +183,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
 .content iframe {
   display: inline-block;
 }
-@media only screen and (min-width: 0px) and (max-width: 825px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   .content iframe {
     display: block;
   }
