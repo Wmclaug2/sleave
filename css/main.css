@@ -38,6 +38,7 @@ header h1 {
 }
 @media handheld, screen and (max-width: 995px) {
   header h1 {
+    font-size: 110px;
     display: block;
     float: none;
     margin: 0 auto;
@@ -53,6 +54,7 @@ header h2 {
 }
 @media handheld, screen and (max-width: 995px) {
   header h2 {
+    font-size: 40px;
     display: block;
     float: none;
     margin: 0 auto;
@@ -98,6 +100,7 @@ header .nav .btn-primary, header .nav li {
 }
 @media handheld, screen and (max-width: 995px) {
   header .nav .btn-primary, header .nav li {
+    font-size: 30px;
     padding: 10px;
   }
 }
@@ -212,6 +215,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
 }
 @media handheld, screen and (max-width: 995px) {
   .foot-nav .btn-primary1, .foot-nav li {
+    font-size: 30px;
     padding: 5px;
   }
 }

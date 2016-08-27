@@ -55,6 +55,7 @@ header{
 		font-size: 90px;
 		margin: 0 auto 0 70px;
 		@include mobile{
+			font-size:110px;
 			display:block;
 			float:none;
 			margin: 0 auto;
@@ -69,6 +70,7 @@ header{
 		padding:10px;
 		position: relative;
 		@include mobile{
+			font-size:40px;
 			display:block;
 			float:none;
 			margin:0 auto;
@@ -124,6 +126,7 @@ header{
 		padding:20px;
 		text-decoration:none;
 		@include mobile{
+			font-size:30px;
 			padding:10px;
 		}
 
@@ -258,6 +261,7 @@ header{
 		padding:10px;
 		text-decoration:none;
 		@include mobile{
+			font-size:30px;
 			padding:5px;
 		}
 	}
