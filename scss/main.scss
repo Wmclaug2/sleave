@@ -5,7 +5,7 @@
 // ****************************
 
 @import "compass/css3",
-"mixins",
+"_mixins",
 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300',
 'https://fonts.googleapis.com/css?family=Montserrat';
 
@@ -38,15 +38,26 @@ header{
 	height: 60%;
 	position: relative;	
 	@include mobile{
-		height:30%;
+		height:40%;
 	}
-
+	
+	.logo {
+		@include mobile{
+			display:block;
+			text-align:center;
+		}
+	}
 	h1{	
 		color:white;
 		font-family: 'Amatic SC', cursive;
 		float:left;
 		font-size: 90px;
 		margin: 0 auto 0 70px;
+		@include mobile{
+			display:block;
+			float:none;
+			margin: 0 auto;
+		}
 	}
 
 	h2{
@@ -56,6 +67,12 @@ header{
 		position: relative;
 		float:left;
 		font-size: 25px;
+		@include mobile{
+			padding:0;
+			float:none;
+			display:block;
+			margin:0 auto;
+		}
 	}
 
 	// ****************************
@@ -65,20 +82,15 @@ header{
 	// ****************************
 
 	.social-buttons{
-		position: absolute;
-		bottom: 0;
-		background: rgba(0,0,0,.3);
-		@include mobile{
-			display:none;
-		}
-		.social-icon {
-			display: inline-block;
-			&:hover{
-				transform:translateY(3px);
-			}
+		width:40%;
+		height:40%;
+		list-style:none;
+		display:inline-block;
+		& img.social-icon {
+			position:absolute;
+			width:30%;
 		}
 	}
-
 	// ****************************
 
 	// * Nav
@@ -165,14 +177,12 @@ header{
 		margin:20px;
 		display: inline-block;
 		float:right;
-		right:10%;
 		width:50%;
 		font-size: 25px; 
 		font-family:'Open Sans Condensed', sans-serif;;
 		text-align: justify;
 		@include mobile{
-			margin-bottom:20px;
-			padding-left:30px;
+			margin:10px auto;
 			display:block;
 			float:none;
 			width:80%;
@@ -212,13 +222,14 @@ header{
 		position: relative;
 		margin: 40px auto;
 		bottom:0;
-		width:80%; 
+		width:90%; 
 		border: 2px solid black;
 	}
 
 	 iframe{
 		display: inline-block;
 		@include mobile{
+			margin:0 auto;
 			display:block;
 		}
 	}
@@ -251,5 +262,8 @@ header{
 		color:white;
 		font-family: 'Architects Daughter', cursive;
 		background: "light gray";
+		@include mobile{
+			padding:5px;
+		}
 	}
 }

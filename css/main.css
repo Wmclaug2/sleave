@@ -28,9 +28,15 @@ header {
   height: 60%;
   position: relative;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   header {
-    height: 30%;
+    height: 40%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  header .logo {
+    display: block;
+    text-align: center;
   }
 }
 header h1 {
@@ -40,6 +46,13 @@ header h1 {
   font-size: 90px;
   margin: 0 auto 0 70px;
 }
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  header h1 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+}
 header h2 {
   color: white;
   font-family: 'Amatic SC', cursive;
@@ -48,21 +61,23 @@ header h2 {
   float: left;
   font-size: 25px;
 }
-header .social-buttons {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-@media only screen and (min-width: 0px) and (max-width: 700px) {
-  header .social-buttons {
-    display: none;
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  header h2 {
+    padding: 0;
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
-header .social-buttons .social-icon {
+header .social-buttons {
+  width: 40%;
+  height: 40%;
+  list-style: none;
   display: inline-block;
 }
-header .social-buttons .social-icon:hover {
-  transform: translateY(3px);
+header .social-buttons img.social-icon {
+  position: absolute;
+  width: 30%;
 }
 header .nav {
   position: absolute;
@@ -74,7 +89,7 @@ header .nav {
   right: 0;
   border-radius: 10px 0 0 10px;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   header .nav {
     width: 100%;
     margin: 0 auto;
@@ -93,7 +108,7 @@ header .nav .btn-primary, header .nav li {
   font-family: 'Architects Daughter', cursive;
   background: "light gray";
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   header .nav .btn-primary, header .nav li {
     padding: 10px;
   }
@@ -128,16 +143,14 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   margin: 20px;
   display: inline-block;
   float: right;
-  right: 10%;
   width: 50%;
   font-size: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: justify;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   .content p {
-    margin-bottom: 20px;
-    padding-left: 30px;
+    margin: 10px auto;
     display: block;
     float: none;
     width: 80%;
@@ -151,7 +164,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   bottom: 10px;
   left: 30px;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   .content aside {
     display: block;
     width: 60%;
@@ -165,7 +178,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   width: 40%;
   margin: 10px auto 0 auto;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   .content img.sleave-pic {
     display: block;
     width: 80%;
@@ -177,14 +190,15 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   position: relative;
   margin: 40px auto;
   bottom: 0;
-  width: 80%;
+  width: 90%;
   border: 2px solid black;
 }
 .content iframe {
   display: inline-block;
 }
-@media only screen and (min-width: 0px) and (max-width: 700px) {
+@media only screen and (min-width: 0px) and (max-width: 825px) {
   .content iframe {
+    margin: 0 auto;
     display: block;
   }
 }
@@ -209,4 +223,9 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   color: white;
   font-family: 'Architects Daughter', cursive;
   background: "light gray";
+}
+@media only screen and (min-width: 0px) and (max-width: 825px) {
+  .foot-nav .btn-primary1, .foot-nav li {
+    padding: 5px;
+  }
 }
