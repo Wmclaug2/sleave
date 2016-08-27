@@ -88,7 +88,7 @@ header .nav ul {
   padding: 20px;
 }
 header .nav .btn-primary, header .nav li {
-  background: "light gray";
+  background: #D3D3D3;
   color: white;
   display: inline;
   font-family: 'Architects Daughter', cursive;
@@ -202,7 +202,7 @@ header .nav li:hover, header .nav .foot-nav li:hover {
   padding: 20px;
 }
 .foot-nav .btn-primary1, .foot-nav li {
-  background: "light gray";
+  background: #D3D3D3;
   color: white;
   display: inline;
   font-family: 'Architects Daughter', cursive;
